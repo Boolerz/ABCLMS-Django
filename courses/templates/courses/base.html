@@ -1,0 +1,24 @@
+{% comment %} failsafe way to load all the static files in all your app views {% endcomment %}
+{% load static %} 
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login page</title>
+        <link rel="stylesheet" href="style.css">
+
+        {% comment %} Meta data for your apps SEO {% endcomment %}
+        {% block meta %} 
+
+        {% endblock %} 
+    </head>
+    <div style="margin: 0%;" text-alignmrnt="center;">ABCLMS </div>
+    <body>
+        
+        {% comment %} all your templates will use this base html file to render their contents within the bounds of the block contents. {% endcomment %}
+
+        {% block content %}
+
+        {% endblock %}
+    </body>
+</html>
